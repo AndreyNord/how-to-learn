@@ -73,39 +73,219 @@
   padding-top: 100px;
   display: flex;
   justify-content: center;
-  height: 500px;
-}
-
-.two-colums__brief {
+  }
+.two-columns {
+  width: 80%;
   display: flex;
-  width: 175px;
-  font-size: 18px;
-  line-height: 1.2;
-  font-weight: normal;
+  justify-content: space-between;
+  }
+.two-columns__brief {
   margin: 0;
+  width: 175px;
+  line-height: 1.2;
+  font-size: 18px;
   color: #2f80ed;
-}
-.two-colums__main-text {
-  display: flex;
+  font-weight: normal;
+  }
+.two-columns__main-text {
   width: 80%;
   min-width: 784px;
   flex-direction: column;
   justify-content: space-between;
 }
-.paragraph:last-of-type {
+.two-columns__paragraph:last-of-type {
   margin-bottom: 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
 }
-.paragraph {
+.two-columns__paragraph {
+  margin: 0;
   margin-bottom: 30px;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
 }
-.two-colums__span-accent {
+.two-columns__span-accent {
   line-height: 34px;
   font-size: 24px;
   font-weight: bold;
 }
+/* start 3 section */
+.digits {
+  padding: 100px 0 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.digits__section-title {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.digits__section-title_text {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+}
+.digits__section-subtitle {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+  width: 60%;
+}
+.digits__table {
+  margin: 0 auto 0;
+  width: 1100px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  
+}
+.digits__table-cell {
+  margin: 0;
+  padding-top: 60px;
+  flex-flow: row wrap;
+  width: 250px;
+  
+}
+.digits__table-heading {
+  margin: 0;
+  height: 24px;
+  font-size: 24px;
+  line-height: 1.15;
+  font-weight: bold;
+}
+.digits__table-text {
+  margin: 0;
+  margin: 20px auto 20px;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: normal;
+}
+.table-text__span {
+  margin: 0;
+  padding-top: 20px;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: normal;
+}
+.feynman {
+  background-color: #f2f2f2;
+  padding-top: 100px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 790px;
+  }
+
+.feynman__title {
+  width: 648px;
+  margin: 0;
+  z-index: 1;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+  text-align: center;
+}
+.feynman__subtitle {
+  margin: 0;
+  margin-top: 70px;
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: normal;
+  z-index: 1;
+}
+.feynman__image {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+  width: 867px;
+  height: 637px;
+}
+.feynman__link {
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  color: #2f80ed;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  text-decoration: none;
+}
+.feynman__link:hover {
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  color: #000000;
+  line-height: 51px;
+  font-size: 30px;
+  font-weight: normal;
+}
+.kaufman {
+  margin: 0;
+  background-color: #1f1f1f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-title__theme-dark {
+  margin: 0;
+  margin-top: 90px;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+  color: #fff;
+}
+.section-subtitle__theme-dark {
+  margin: 0;
+  margin-top: 20px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  color: #fff;
+}
+.table_theme_dark {
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+}
+.table__cell_theme_dark {
+  width: 200px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+}
+.table__heading_theme_dark {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  color: #fff;
+}
+.table__text_theme_dark {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0;
+  padding-top: 20px;
+  color: #fff;
+}
+.footer {
+  display: flex;
+  width: 90%;
+  margin: 0;
+  padding: 60px auto 40px;
+}
+
