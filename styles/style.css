@@ -76,6 +76,7 @@
   display: flex;
   justify-content: center;
   }
+  /* start 2 section */
 .two-columns {
   width: 80%;
   display: flex;
@@ -179,6 +180,7 @@
   line-height: 1.2;
   font-weight: normal;
 }
+/* start 4 section */
 .feynman {
   background-color: #f2f2f2;
   padding-top: 100px;
@@ -230,9 +232,10 @@
   right: 48px;
   color: #000000;
   line-height: 51px;
-  font-size: 30px;
+  font-size: 35px;
   font-weight: normal;
 }
+/* start 5 section */
 .kaufman {
   margin: 0;
   background-color: #1f1f1f;
@@ -284,60 +287,68 @@
   padding-top: 20px;
   color: #fff;
 }
+/* start footer */
 .footer {
-  display: flex;
-  padding-top: 60px;
-  padding-bottom: 40px;
   background-color: #1f1f1f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   min-height: 350px;
-  border: 1px solid red;
 }
-.footer__colums{
+.logo_place_footer {
+  background-image: url(../../../images/logo_place_footer.svg);
+}
+.footer__social-icon {
+  height: 16px;
+  width: 16px;
+  padding-right: 10px;
+}
+.footer__columns {
+  margin: 60px 0 40px 0;
   width: 90%;
   display: flex;
   justify-content: space-between;
-  border: 1px solid yellow;
+  flex-grow: 1;
 }
-.footer__column_content-copyright {
-  border: 1px solid blue;
-  
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+.footer__column_content_copyright {
   flex-basis: 711px;
+  justify-content: space-between;
 }
-.footer__content-info {
-  border: 1px solid blue;
-}
-.footer__content-social {
-  border: 1px solid blue;
-}
-.footer__autor {
-  color: #fff;
-  position: absolute;
-}
-.footer__colums_heading-title {
-  margin: 0;
-  margin-bottom: 20px;
-  color: #fff;
+.footer__column_content_info {
   line-height: 30px;
   font-size: 18px;
-  font-weight: bold;
 }
-.logo__place_footer {
-  width: 183px;
-  height: 35px;
+.footer__column_content_social {
+  line-height: 30px;
+  font-size: 18px;
 }
-.footer__colums-links {
+.footer__column-links {
+  padding: 0 0 16px 0;
+  list-style: none;
   margin: 0;
-  margin-bottom: 16px;
 }
-.footer__page-link {
+.footer__column-link {
+  margin: 0;
+  color: #fff;
   text-decoration: none;
-  color: #fff;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+.footer__column-heading {
+  margin: 0;
+  font-weight: bold;
+  padding-bottom: 20px;
   line-height: 30px;
   font-size: 18px;
-  font-weight: normal;
 }
-.footer__icon-link {
-  width: 16px;
-  height: 16px;
+.footer__author {
+  margin: 18px 0;
+  line-height: 25px;
+  font-size: 18px;
+  display: flex;
 }
-
