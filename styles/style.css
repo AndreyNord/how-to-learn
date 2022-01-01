@@ -17,12 +17,14 @@
   /* выше установили ограничения для секции */
 }
 .logo {
-  position: absolute;
-  top: 30px;
-  left: 64px;
   height: 32px;
   width: 183px;
   z-index: 3;
+}
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
 }
 .header__title {
   display: flex;
@@ -284,8 +286,58 @@
 }
 .footer {
   display: flex;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  background-color: #1f1f1f;
+  min-height: 350px;
+  border: 1px solid red;
+}
+.footer__colums{
   width: 90%;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid yellow;
+}
+.footer__column_content-copyright {
+  border: 1px solid blue;
+  
+  flex-basis: 711px;
+}
+.footer__content-info {
+  border: 1px solid blue;
+}
+.footer__content-social {
+  border: 1px solid blue;
+}
+.footer__autor {
+  color: #fff;
+  position: absolute;
+}
+.footer__colums_heading-title {
   margin: 0;
-  padding: 60px auto 40px;
+  margin-bottom: 20px;
+  color: #fff;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.logo__place_footer {
+  width: 183px;
+  height: 35px;
+}
+.footer__colums-links {
+  margin: 0;
+  margin-bottom: 16px;
+}
+.footer__page-link {
+  text-decoration: none;
+  color: #fff;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+}
+.footer__icon-link {
+  width: 16px;
+  height: 16px;
 }
 
