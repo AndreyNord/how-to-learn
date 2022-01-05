@@ -14,6 +14,8 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  position: relative;
+  overflow: hidden;
   /* выше установили ограничения для секции */
 }
 .logo {
@@ -111,62 +113,54 @@
 }
 /* start 3 section */
 .digits {
-  padding: 100px 0 100px;
+  padding: 100px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.digits__section-title {
+.section-title {
+  width: 60%;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  white-space: nowrap;
 }
-.digits__section-title_text {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: bold;
-}
-.digits__section-subtitle {
+.section-subtitle {
+  width: 60%;
+  line-height: 34px;
+  font-size: 24px;
   margin: 0;
   display: flex;
   justify-content: center;
   padding-top: 20px;
-  font-size: 24px;
-  line-height: 34px;
-  font-weight: normal;
-  width: 60%;
 }
-.digits__table {
-  margin: 0 auto 0;
+.table {
   width: 1100px;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.digits__table-cell {
-  margin: 0;
-  padding-top: 60px;
-  flex-flow: row wrap;
+.table__cell {
   width: 250px;
-  
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
 }
-.digits__table-heading {
-  margin: 0;
-  height: 24px;
-  font-size: 24px;
+.table__heading {
   line-height: 1.15;
+  font-size: 24px;
   font-weight: bold;
-}
-.digits__table-text {
   margin: 0;
-  margin: 20px auto 20px;
-  font-size: 18px;
+}
+.table__text {
   line-height: 1.2;
-  font-weight: normal;
+  font-size: 18px;
+  margin: 0;
+  padding-top: 20px;
 }
 .table-text__span {
   margin: 0;
@@ -232,26 +226,35 @@
 }
 /* start 5 section */
 .kaufman {
-  margin: 0;
-  background-color: #1f1f1f;
+  padding: 90px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
+  background-color: #1f1f1f;
+  position: relative;
 }
 .section-title__theme-dark {
-  margin: 0;
-  margin-top: 90px;
+  width: 60%;
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
   color: #fff;
+  z-index: 2;
 }
 .section-subtitle__theme-dark {
-  margin: 0;
-  margin-top: 20px;
+  width: 60%;
   line-height: 34px;
   font-size: 24px;
-  font-weight: normal;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
   color: #fff;
 }
 .table_theme_dark {
@@ -259,13 +262,14 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  
+  z-index: 2;
 }
 .table__cell_theme_dark {
   width: 200px;
   margin-top: 60px;
   display: flex;
   flex-direction: column;
+  z-index: 2;
 }
 .table__heading_theme_dark {
   line-height: 1.15;
@@ -273,6 +277,7 @@
   font-weight: bold;
   margin: 0;
   color: #fff;
+  z-index: 2;
 }
 .table__text_theme_dark {
   line-height: 1.2;
@@ -281,6 +286,17 @@
   margin: 0;
   padding-top: 20px;
   color: #fff;
+  z-index: 2;
+}
+.kaufman__triagle {
+  background-image: url(../../../images/kaufman-triangle.svg);
+  height: 877px;
+  width: 877px;
+  position: absolute;
+  right: -210px;
+  top: 0;
+  background-size: contain;
+  z-index: 0;
 }
 /* start footer */
 .footer {
@@ -291,7 +307,7 @@
   min-height: 350px;
 }
 .logo_place_footer {
-  background-image: url(../../../images/logo_place_footer.svg);
+  background-image: url(../images/logo_place_footer.svg);
 }
 .footer__social-icon {
   height: 16px;
