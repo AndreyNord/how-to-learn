@@ -31,9 +31,9 @@
 @import url(../blocks/logo/_place/logo_place_header.css);
 @import url(../blocks/page/page.css);
 @import url(../blocks/section-subtitle/section-subtitle.css);
-@import url(../blocks/section-subtitle/_theme_dark/section-subtitle_theme_dark.css);
+@import url(../blocks/section-subtitle/_theme/_theme_dark/section-subtitle_theme_dark.css);
 @import url(../blocks/section-title/section-title.css);
-@import url(../blocks/section-title/_theme_dark/section-title_theme_dark.css);
+@import url(../blocks/section-title/_theme/_theme_dark/section-title_theme_dark.css);
 @import url(../blocks/table/table.css);
 @import url(../blocks/table/__cell/table__cell.css);
 @import url(../blocks/table/__cell/_theme_dark/table__cell_theme_dark.css);
@@ -52,7 +52,7 @@
 @import url(../blocks/cards/__description/cards__description.css);
 @import url(../blocks/cards/__image/cards__image.css);
 @import url(../blocks/cards/__item/cards__item.css);
-@import url(../blocks/cards/__titel/cards__title.css);
+@import url(../blocks/cards/__title/cards__title.css);
 @import url(../blocks/video/video.css);
 @import url(../blocks/video/__iframe/video__iframe.css);
 @import url(../blocks/video/__iframes/video__iframes.css);
